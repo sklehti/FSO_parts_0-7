@@ -14,8 +14,8 @@ const App = (props) => {
   };
   const voteClick = () => {
     setVote((copy[selected] += 1));
-    //console.log(copy);
-    //console.log(Math.max(...copy));
+    console.log(copy);
+    console.log(Math.max(...copy));
     console.log(copy.indexOf(Math.max(...copy)));
   };
 
