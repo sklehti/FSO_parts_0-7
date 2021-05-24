@@ -1,0 +1,34 @@
+{
+  "persons": [
+    {
+      "name": "Arto Hellas",
+      "number": "040-123456",
+      "id": 1
+    },
+    {
+      "name": "Dan Abramov",
+      "number": "12-43-234345",
+      "id": 3
+    },
+    {
+      "name": "Mary Poppendieck",
+      "number": "39-23-6423122",
+      "id": 4
+    },
+    {
+      "name": "pipo",
+      "number": "09234849230",
+      "id": 7
+    },
+    {
+      "name": "kari",
+      "number": "9084350539",
+      "id": 9
+    },
+    {
+      "name": "saara",
+      "number": "029384",
+      "id": 10
+    }
+  ]
+}
