@@ -1,0 +1,11 @@
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRoaXJkX3VzZXIiLCJpZCI6IjYxMWEwNDVkNzk0MDhmODI3M2ZhODA3MSIsImlhdCI6MTYyOTE4Nzc4MCwiZXhwIjoxNjI5MTkxMzgwfQ.FVSoFiLFDx7EFi5r2BpVS9gV-Ece39FshEoz-AU6Dkc
+
+{
+  "title": "testi_uusin",
+  "author": "testikirjailija_16",
+  "url": "https://www.freecodecamp.org/news/how-to-deploy-a-nodejs-app-to-heroku-from-github-without-installing-heroku-on-your-machine-433bec770efe/",
+  "likes": 0
+}
