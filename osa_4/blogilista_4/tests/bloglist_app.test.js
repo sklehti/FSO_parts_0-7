@@ -301,6 +301,22 @@ describe("when there is initially some notes saved", () => {
       const usersAtEnd = await helper.usersInDb();
       expect(usersAtEnd).toHaveLength(usersAtStart.length);
     });
+
+    test("if new blog doesn't contain token, status code is 401", async () => {
+      const blogsAtStart = await helper.blogInDb();
+
+      const newBlog = {
+        title: "testi",
+        author: "testikirjailija",
+        url: "https://www.freecodecamp.org/news/how-to-deploy-a-nodejs-app-to-heroku-from-github-without-installing-heroku-on-your-machine-433bec770efe/",
+        likes: 111111111111111,
+      };
+
+      await api.post("/api/blogs").send(newBlog).expect(401);
+
+      const blogsAtEnd = await helper.blogInDb();
+      expect(blogsAtEnd).toHaveLength(helper.initialBlogs.length);
+    });
   });
 });
 
