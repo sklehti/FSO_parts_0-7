@@ -1,0 +1,99 @@
+{
+  "notes": [
+    {
+      "content": "custom-hooks are grat",
+      "id": 1
+    },
+    {
+      "content": "the best featrure ever <3",
+      "id": 2
+    },
+    {
+      "content": "jfsldkjfsldk",
+      "id": 3
+    },
+    {
+      "content": "jhkjhkjhkjh",
+      "id": 4
+    },
+    {
+      "content": "hjkjhjkh kjhjhk",
+      "id": 5
+    },
+    {
+      "content": "testi testi",
+      "id": 6
+    },
+    {
+      "content": "oma lisä",
+      "id": 7
+    },
+    {
+      "content": "toimii",
+      "id": 8
+    },
+    {
+      "content": "hienoa työtä!",
+      "id": 9
+    },
+    {
+      "content": "uusi testi",
+      "id": 10
+    },
+    {
+      "content": "toimiiko oikein?",
+      "id": 11
+    },
+    {
+      "content": "toimii :)",
+      "id": 12
+    }
+  ],
+  "persons": [
+    {
+      "name": "mluukkai",
+      "number": "040-5483923",
+      "id": 1
+    },
+    {
+      "name": "kaltsoon",
+      "number": "045-2323456",
+      "id": 2
+    },
+    {
+      "name": "jhkhkj",
+      "number": "kjhkjhj",
+      "id": 3
+    },
+    {
+      "name": "hkhkj",
+      "number": "456476457",
+      "id": 4
+    },
+    {
+      "name": "elli",
+      "number": "eloisa",
+      "id": 5
+    },
+    {
+      "name": "milla ",
+      "number": "makea",
+      "id": 6
+    },
+    {
+      "name": "saara",
+      "number": "suorittaja",
+      "id": 7
+    },
+    {
+      "name": "ninni",
+      "number": "589034",
+      "id": 8
+    },
+    {
+      "name": "usko",
+      "number": "04895038",
+      "id": 9
+    }
+  ]
+}
