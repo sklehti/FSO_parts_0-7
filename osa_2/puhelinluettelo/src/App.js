@@ -57,19 +57,29 @@ const App = () => {
       name: newName,
       number: newNumber,
     };
+
     const sameName = persons.some(
       (p) => p.name.toLowerCase() === newName.toLowerCase()
     );
 
     if (!sameName) {
-      personService.create(personObject).then((returnedPerson) => {
-        setPersons(persons.concat(returnedPerson));
-      });
-
-      setInformationMessage(`Added ${newName}`);
-      setTimeout(() => {
-        setInformationMessage(null);
-      }, 2000);
+      personService
+        .create(personObject)
+        .then((returnedPerson) => {
+          setPersons(persons.concat(returnedPerson));
+          setInformationMessage(`Added ${newName}`);
+          setTimeout(() => {
+            setInformationMessage(null);
+          }, 2000);
+        })
+        .catch((error) => {
+          setDeleteMessage(
+            `Person validation failed: name and/or number: Path 'name' and/or 'number' (${newName}) and/or (${newNumber}) is shorter than the minimum allowed length (3) and (8).`
+          );
+          setTimeout(() => {
+            setDeleteMessage(null);
+          }, 2000);
+        });
 
       setNewName("");
       setNewNumber("");
@@ -80,10 +90,11 @@ const App = () => {
 
       if (result) {
         const personId = persons.find((p) => p.name === newName);
-
+        console.log("testi", personId);
         personService
           .update(personId.id, personObject)
           .then((returnedPerson) => {
+            console.log(returnedPerson, "testi2");
             setPersons(
               persons.map((p) => (p.id !== personId.id ? p : returnedPerson))
             );
@@ -123,9 +134,9 @@ const App = () => {
     setShowPerson(event.target.value);
   };
 
-  const personFilter = persons.filter((p) =>
-    p.name.toLowerCase().includes(showPerson.toLowerCase())
-  );
+  const personFilter = persons.filter((p) => {
+    return p.name.toLowerCase().includes(showPerson.toLowerCase());
+  });
 
   const handlePersonDelete = (id, name) => {
     const result = window.confirm(`Delete ${name}`);
