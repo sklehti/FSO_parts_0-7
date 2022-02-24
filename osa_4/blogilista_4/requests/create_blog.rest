@@ -1,7 +1,7 @@
 
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRoaXJkX3VzZXIiLCJpZCI6IjYxMWEwNDVkNzk0MDhmODI3M2ZhODA3MSIsImlhdCI6MTYyOTE4Nzc4MCwiZXhwIjoxNjI5MTkxMzgwfQ.FVSoFiLFDx7EFi5r2BpVS9gV-Ece39FshEoz-AU6Dkc
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRoaXJkX3VzZXIiLCJpZCI6IjYxMWEwNDVkNzk0MDhmODI3M2ZhODA3MSIsImlhdCI6MTYzMDA1NjgyNiwiZXhwIjoxNjMwMDYwNDI2fQ.bVGgKhiQwqBhSoeQKkILYaNnkuzpYVk5ZAfseDt62jw
 
 {
   "title": "testi_uusin",
